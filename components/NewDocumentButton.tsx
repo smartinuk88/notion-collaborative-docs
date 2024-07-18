@@ -11,7 +11,6 @@ function NewDocumentButton() {
 
   const handleCreateDocument = () => {
     startTransition(async () => {
-      // Create new document
       const { docId } = await createNewDocument();
       router.push(`/doc/${docId}`);
     });
